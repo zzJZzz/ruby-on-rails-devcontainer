@@ -14,8 +14,8 @@ Softwares:
 - Version `19` of [NodeJS](https://nodejs.org) JavaScript runtime environment
 - [PostgreSQL](https://www.postgresql.org) database based on the latest official docker image
 - [Redis](https://redis.io) in-memory key-value store based on the latest official docker image
-- [MeiliSearch](https://www.meilisearch.com) search engine based on the latest official docker image
-- [Memcached](https://memcached.org) in-memory key-value store based on the latest official docker image
+- [OpenSearch](https://www.opensearch.org) search engine based on the latest official docker image
+- [Sidekiq](https://sidekiq.org) in-memory key-value store based on the latest official docker image
 - [Firefox](https://www.mozilla.org/en-US/firefox) browser to run system tests
 - [`postgresql-client`](https://www.postgresql.org/docs/current/app-psql.html)
 
