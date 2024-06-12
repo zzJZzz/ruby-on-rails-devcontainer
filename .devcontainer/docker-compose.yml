@@ -54,11 +54,16 @@ services:
       - "9200:9200"
       - "9600:9600"
 
- redis:
-    image: redis:alpine
-    ports:
-      - "6379:6379"1
-
+  sidekiq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bundle exec sidekiq
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+      - db
 volumes:
   postgres-data:
   redis-data:
